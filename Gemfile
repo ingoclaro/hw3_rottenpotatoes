@@ -10,15 +10,17 @@ group :development, :test do
   gem 'sqlite3'
   # gem 'ruby-debug19', :require => 'ruby-debug'
   gem 'pry'
-  gem 'database_cleaner'
-  gem 'capybara'
+  gem 'database_cleaner' # to clear Cucumber's test database between runs
   gem 'launchy'
   gem 'rspec-rails'
 end
+
 group :test do
   gem 'cucumber-rails'
   gem 'cucumber-rails-training-wheels'
+  gem 'capybara'         # lets Cucumber pretend to be a web browser
 end
+
 group :production do
 #  gem 'pg'
 end
